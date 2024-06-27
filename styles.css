@@ -522,11 +522,12 @@ body {
 
 /* Footer styles */
 .footer {
-    background-color: rgba(0, 0, 0, 0.1);;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 20px;
     text-align: center;
 }
+
 .footer img.logo2 {
     width: 80px;
     height: auto;
@@ -566,3 +567,80 @@ body {
 .links li a.linkstyle:hover {
     text-decoration: underline;
 }
+
+/* Media Queries */
+
+/* Tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer img.logo2 {
+        width: 70px;
+    }
+
+    .link-logos i {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+
+    .links li a.linkstyle {
+        font-size: 14px;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 15px 10px;
+    }
+
+    .footer img.logo2 {
+        width: 60px;
+    }
+
+    .link-logos {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .link-logos i {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+
+    .links li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .links li a.linkstyle {
+        font-size: 12px;
+    }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 10px 5px;
+    }
+
+    .footer img.logo2 {
+        width: 50px;
+    }
+
+    .link-logos i {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    .links li a.linkstyle {
+        font-size: 10px;
+    }
+}
+
